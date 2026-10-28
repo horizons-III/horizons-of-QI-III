@@ -376,11 +376,25 @@
     color: var(--muted);
     font-style: italic;
   }
+  .timetable .flash { font-weight: 600; }
   .timetable .pause th,
   .timetable .pause td { background: var(--tint); }
   .timetable .pause td {
     color: var(--muted);
     font-style: italic;
+  }
+
+  .action {
+    display: inline-block;
+    padding: 0.55rem 1rem;
+    border: 1px solid var(--ink);
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .action:hover {
+    background: var(--ink);
+    color: var(--paper);
   }
 
   .logos {
@@ -513,6 +527,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#programme">Programme</a></li>
           <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#registration">Registration</a></li>
           <li><a href="#venue">Venue &amp; travel</a></li>
           <li><a href="#committees">Committees</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -600,7 +615,7 @@
   <section class="sec sec--wide" id="programme" aria-labelledby="programme-h">
     <h2 id="programme-h">Programme</h2>
     <div class="body">
-      <p>Each day has room for up to five one-hour talks. Speakers will be added to the timetable as the programme is confirmed.</p>
+      <p>Each day has room for up to five invited talks. Each invited talk lasts 40 minutes and is followed by 10 minutes of questions. On Tuesday and Wednesday, the session after lunch (13:30–15:10) is given over to flash talks. Speakers will be added to the timetable as the programme is confirmed.</p>
       <!-- To add a speaker, write the name inside the matching <td class="talk"></td>. -->
       <div class="table-scroll" role="region" aria-label="Timetable" tabindex="0">
         <table class="timetable">
@@ -616,19 +631,19 @@
             </tr>
           </thead>
           <tbody>
-            <tr><th scope="row">09:30–10:30</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
-            <tr class="pause"><th scope="row">10:30–11:00</th><td colspan="5">Coffee break</td></tr>
-            <tr><th scope="row">11:00–12:00</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
-            <tr class="pause"><th scope="row">12:00–13:30</th><td colspan="5">Lunch</td></tr>
-            <tr><th scope="row">13:30–14:30</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
-            <tr><th scope="row">14:30–15:30</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
-            <tr class="pause"><th scope="row">15:30–16:00</th><td colspan="5">Coffee break</td></tr>
-            <tr><th scope="row">16:00–17:00</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
-            <tr><th scope="row">17:00–18:00</th><td>Discussion</td><td>Discussion</td><td>Discussion</td><td>Discussion</td><td>Closing discussion</td></tr>
+            <tr><th scope="row">10:00–10:50</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
+            <tr class="pause"><th scope="row">10:50–11:20</th><td colspan="5">Coffee break</td></tr>
+            <tr><th scope="row">11:20–12:10</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
+            <tr class="pause"><th scope="row">12:10–13:30</th><td colspan="5">Lunch</td></tr>
+            <tr><th scope="row">13:30–14:20</th><td class="talk"></td><td class="flash" rowspan="2">Flash talks</td><td class="flash" rowspan="2">Flash talks</td><td class="talk"></td><td class="talk"></td></tr>
+            <tr><th scope="row">14:20–15:10</th><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
+            <tr class="pause"><th scope="row">15:10–15:40</th><td colspan="5">Coffee break</td></tr>
+            <tr><th scope="row">15:40–16:30</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
+            <tr><th scope="row">16:30–17:30</th><td>Discussion</td><td>Discussion</td><td>Discussion</td><td>Discussion</td><td>Closing discussion</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="note">Talk slots include time for questions. On Monday, registration opens at 08:30, followed by a welcome at 09:15. All times are Singapore time (UTC+8).</p>
+      <p class="note">All times are Singapore time (UTC+8).</p>
     </div>
   </section>
 
@@ -646,6 +661,15 @@
         <li>Simon Milz</li>
       </ul>
       <p class="note">Further speakers will be announced as invitations are confirmed.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="registration" aria-labelledby="registration-h">
+    <h2 id="registration-h">Registration</h2>
+    <div class="body">
+      <p>Horizons III is a small workshop, and attendance is by invitation only. Invited speakers register through the form below, and researchers who would like to take part can use it to request an invitation.</p>
+      <p><a class="action" href="https://docs.google.com/forms/d/e/1FAIpQLSesWaEY1iqDhwi45Neq_bxL28PO_6Mn0MnEhT-6TnFiLJ4Hpw/viewform?usp=header" target="_blank" rel="noopener">Register or request an invitation</a></p>
+      <p class="note">There is no on-site registration. If the form does not open for you, write to one of the organisers listed under <a href="#contact">Contact</a>.</p>
     </div>
   </section>
 
