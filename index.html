@@ -376,7 +376,8 @@
     color: var(--muted);
     font-style: italic;
   }
-  .timetable .flash { font-weight: 600; }
+  .timetable .flash,
+  .timetable .dinner { font-weight: 600; }
   .timetable .pause th,
   .timetable .pause td { background: var(--tint); }
   .timetable .pause td {
@@ -529,7 +530,7 @@
           <li><a href="#speakers">Speakers</a></li>
           <li><a href="#registration">Registration</a></li>
           <li><a href="#venue">Venue &amp; travel</a></li>
-          <li><a href="#committees">Committees</a></li>
+          <li><a href="#committees">Organising Committee</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -600,7 +601,7 @@
     <div class="body">
       <p class="lede">Horizons of Quantum Information is a workshop series on quantum correlations in time.</p>
       <p>The third edition opens the series to the process-based view of multi-time quantum physics: process tensors, process matrices and quantum (non-)Markovianity. The state-based and process-based approaches both describe a quantum system probed at several times, but they start from different objects. One extends the notion of a state across time; the other characterises the process that connects interventions made at different times. Each has developed its own formalism and vocabulary.</p>
-      <p>Many of this year’s participants work on process tensors and non-Markovian dynamics. Over a week of invited talks and discussion, the aim is to set the two frameworks side by side, clarify how they relate, and identify problems where each can inform the other.</p>
+      <p>Many of this year’s participants work on process tensors and non-Markovian dynamics. Over a week of talks and discussion, the aim is to set the two frameworks side by side, clarify how they relate, and identify problems where each can inform the other.</p>
       <h3>Topics</h3>
       <ul class="topics">
         <li>Pseudo-density operators, quantum states over time and spacetime states</li>
@@ -615,8 +616,7 @@
   <section class="sec sec--wide" id="programme" aria-labelledby="programme-h">
     <h2 id="programme-h">Programme</h2>
     <div class="body">
-      <p>Each day has room for up to five invited talks. Each invited talk lasts 40 minutes and is followed by 10 minutes of questions. On Tuesday and Wednesday, the session after lunch (13:30–15:10) is given over to flash talks. Speakers will be added to the timetable as the programme is confirmed.</p>
-      <!-- To add a speaker, write the name inside the matching <td class="talk"></td>. -->
+      <p>Each day has room for up to five invited talks. Each invited talk lasts 40 minutes and is followed by 10 minutes of questions. From Monday to Thursday, the 15:50 session is given over to flash talks. Speakers will be added to the timetable as the programme is confirmed.</p>
       <div class="table-scroll" role="region" aria-label="Timetable" tabindex="0">
         <table class="timetable">
           <caption class="sr-only">Provisional timetable, 1 to 5 March 2027, Singapore time</caption>
@@ -634,12 +634,13 @@
             <tr><th scope="row">10:00–10:50</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
             <tr class="pause"><th scope="row">10:50–11:20</th><td colspan="5">Coffee break</td></tr>
             <tr><th scope="row">11:20–12:10</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
-            <tr class="pause"><th scope="row">12:10–13:30</th><td colspan="5">Lunch</td></tr>
-            <tr><th scope="row">13:30–14:20</th><td class="talk"></td><td class="flash" rowspan="2">Flash talks</td><td class="flash" rowspan="2">Flash talks</td><td class="talk"></td><td class="talk"></td></tr>
-            <tr><th scope="row">14:20–15:10</th><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
-            <tr class="pause"><th scope="row">15:10–15:40</th><td colspan="5">Coffee break</td></tr>
-            <tr><th scope="row">15:40–16:30</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
-            <tr><th scope="row">16:30–17:30</th><td>Discussion</td><td>Discussion</td><td>Discussion</td><td>Discussion</td><td>Closing discussion</td></tr>
+            <tr class="pause"><th scope="row">12:10–13:40</th><td colspan="5">Lunch</td></tr>
+            <tr><th scope="row">13:40–14:30</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
+            <tr><th scope="row">14:30–15:20</th><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td><td class="talk"></td></tr>
+            <tr class="pause"><th scope="row">15:20–15:50</th><td colspan="5">Coffee break</td></tr>
+            <tr><th scope="row">15:50–16:40</th><td class="flash">Flash talks</td><td class="flash">Flash talks</td><td class="flash">Flash talks</td><td class="flash">Flash talks</td><td class="talk"></td></tr>
+            <tr><th scope="row">16:40–17:40</th><td>Discussion</td><td>Discussion</td><td>Discussion</td><td>Discussion</td><td>Closing discussion</td></tr>
+            <tr><th scope="row">Evening</th><td></td><td></td><td class="dinner">Workshop dinner</td><td></td><td></td></tr>
           </tbody>
         </table>
       </div>
@@ -692,9 +693,8 @@
   </section>
 
   <section class="sec" id="committees" aria-labelledby="committees-h">
-    <h2 id="committees-h">Committees</h2>
+    <h2 id="committees-h">Organising Committee</h2>
     <div class="body">
-      <h3>Organising Committee</h3>
       <ul class="people">
         <li><span class="name">Mark Mitchison</span><span class="aff">King’s College London</span></li>
         <li><span class="name">Roger Colbeck</span><span class="aff">King’s College London</span></li>
